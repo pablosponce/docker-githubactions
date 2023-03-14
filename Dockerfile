@@ -11,5 +11,3 @@ RUN npm install
 COPY --chown=node:node . .
 
 CMD [ "node", "index.js" ]
-
-
