@@ -12,3 +12,5 @@ COPY --chown=node:node . .
 
 CMD [ "node", "index.js" ]
 
+
+
