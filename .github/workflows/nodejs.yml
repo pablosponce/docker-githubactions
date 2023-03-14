@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [17.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -28,7 +28,7 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@v4
       with:
         # The name of the image you would like to push
-        name: cloudblog/nodejs_githubactions
+        name: momoconsulting/nodeweb
         # The login username for the registry
         username: ${{ secrets.DOCKERHUB_USER }}
         # The login password for the registry
